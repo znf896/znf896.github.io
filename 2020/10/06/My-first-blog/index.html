@@ -8,6 +8,25 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>这是我的第一篇博客 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
+  <link href="//cdn.bootcss.com/pace/1.0.2/themes/pink/pace-theme-flash.css" rel="stylesheet">
+    <style>
+    .pace .pace-progress {
+        background: #6d6d6d; /*进度条颜色*/
+        height: 2px;
+    }
+    .pace .pace-progress-inner {
+         box-shadow: 0 0 10px #1E92FB, 0 0 5px     #6d6d6d; /*阴影颜色*/
+    }
+    .pace .pace-activity {
+        border-top-color: #6d6d6d;    /*上边框颜色*/
+        border-left-color: #6d6d6d;    /*左边框颜色*/
+    }
+  </style>
+
+
+
   <meta name="description" content="this is my first blog已经完成了git密码和账号的存储这是hexo admin设置了密码和账号准备放图片 11231231213124141231123141123123412313413124131 2w1231312412313瘦成闪电4124233213qweqeqewqewq qewqweqeqeq  234d大家说的 等哈看的话 阿鸡蛋的 这么长也展示吗？">
 <meta property="og:type" content="article">
 <meta property="og:title" content="这是我的第一篇博客">
@@ -219,6 +238,19 @@
         </div>
         
         
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
+        </div>
+        
     </div>
 </aside>
 
@@ -263,7 +295,7 @@
 		toc_hide_index: true,
 		root: "/",
 		innerArchive: true,
-		showTags: true
+		showTags: false
 	}
 </script>
 
