@@ -6,7 +6,7 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Hexo</title>
+  <title>page | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 <script src="//cdn.bootcss.com/pace/1.0.2/pace.min.js"></script>
@@ -27,11 +27,13 @@
 
 
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="page">
+<meta property="og:url" content="http://example.com/2020/10/11/page/index.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-10-11T15:08:10.000Z">
+<meta property="article:modified_time" content="2020-10-11T15:08:10.044Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -169,16 +171,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-page" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-page" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/11/page/">page</a>
+    <h1 class="article-title" itemprop="name">
+      page
     </h1>
   
 
@@ -202,16 +202,24 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/11/page/">展开全文 >></a>
-        </p>
-      
 
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
+
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2020/10/06/My-first-blog/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">如何做好测试用例</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
 
 <aside class="wrap-side-operation">
     <div class="mod-side-operation">
@@ -226,116 +234,32 @@
         </div>
         
         
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-My-first-blog" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/10/06/My-first-blog/">如何做好测试用例</a>
-    </h1>
-  
-
-        
-        <a href="/2020/10/06/My-first-blog/" class="archive-article-date">
-  	<time datetime="2020-10-05T16:07:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-10-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>1、测试用例的重要性：<br>在公司中，测试用例是作为测试工程师执行测试的依据，那么测试用例这么重要，它有什么作用呢？<br>第一：它是发现bug、复现bug的依据<br>第二：帮组理清测试人员的思路，发现遗漏的测试点<br>第三：评估自己的工作量<br>第四：可以提前准备测试数据<br>第五：其他测试人员接收工作后，方便维护，降低成本<br>第六：便于高效的进行回归测试<br>第七：有效的把控工作进度<br><img src="/images/pasted-1.png" alt="upload successful"></p>
-<p>2、测试用例的书写规范<br>因为每个公司、行业的测试用例规范可能有所不同，所以在这里列下比较通用、全面的格式形式<br>测试用例的内容包括：编号、测试项、测试标题、用例属性、重要级别、预置条件、测试输入、操作步骤、预期结果、实际结果；接下来一一讲解各个要素的作用与注意事项：<br>编号：每一条测试用例都有自己的编号，编号的命名规范与当前业务需求关联<br><img src="/images/pasted-4.png" alt="upload successful"></p>
-<p>测试项：是从业务需求中拆分出来的功能需求；比如用户管理系统，则用户注册、用户登陆、用户退出就是术语用户管理需求中的功能需求<br><img src="/images/pasted-5.png" alt="upload successful"></p>
-<p>测试标题：也可以称为子测试点，每一条测试用例都具有唯一性，所以测试标题的命名也是具有唯一性，既有可读性，有具有唯一性，让测试人员知道这条测试用例是要测什么内容。比如用户注册中，它的子测试点包括：新增用户名称为空、新增名称长度超过上限的的客户信息、用户名称包括特殊字符</p>
-<p>用例属性：并不是所有的业务都需要。它是用来描述用例的用途，包括功能性测试、兼容性测试、安全性测试、性能测试、弱网测试。它可以让测试人员根据项目周期、风险、策略来选择性的执行测试用例，将测试收益实现最大化。</p>
-<p>重要级别：分为高、中、低。高级别的用例是指实现主题功能的测试用例；中界别是指系统遇到错误、异常也可以正确处理的功能；低：GUI、文字描述类的用例</p>
-<p>预置条件：也称为前置条件。前置条件需要描述清楚要进行具体测试之前应具备的条件。比如游戏的登陆界面的测试，它的前置条件：1、进入游戏；2、点击用户登陆按钮<br>前置条件同样需具备可读性，具体来说，当几条测试用例的前置条件相同时，需要进行合并，减少测试人员的阅读疲劳</p>
-<p>测试输入：为测试构造测试数据</p>
-<p>操作步骤：操作步骤在前置条件的基础上执行具体的测试步骤，那么操作步骤需要具备可执行性，比如客户端有具体的表现，则操作步骤中写上查看客户端XXX的表现；有参数需求的，在步骤中写明具体的量化参数；<br>但是测试对象（比如游戏）的耦合比较多，一个测试点就包含里多个测试步骤，结果中既有功能上的表现，又有客户端的表现，遇到这种情况，依旧保持用例唯一性的准则。如果有5条测试步骤，当第2条测试步骤出现里预期结果时，则输出一条测试用例。<br>但是测试对象（比如游戏）的耦合比较多，一个测试点就包含里多个测试步骤，结果中既有功能上的表现，又有客户端的表现，遇到这种情况，依旧保持用例唯一性的准则。如果有5条测试步骤，当第2条测试步骤出现预期结果时，则输出一条测试用例。<br><img src="/images/pasted-8.png" alt="upload successful"></p>
-<p>预期结果：预期结果分为功能表现、客户端界面表现，写用例的时候需要将这中情况分开写</p>
-<p>实际结果：执行测试之后，根据实际的情况写上通过或不通过</p>
-<p>3、提高可读性的小技巧：<br>前置条件、测试步骤的描述中加上序号，可以提高可读性<br>用例中有参数部分，可以用不同的颜色来区分<br>关键的操作步骤可以用不同的颜色来区分</p>
-<p>4、好的测试用例具备的特征：<br>整体的完备性：“好的”测试用例一定是一个完备的整体，是有效测试用例组成的集合，能够完全覆盖测试需求</p>
-<p>等价类划分的准确性：对于每一个等价类都能保证只要其中一个输入测试通过，其他输入也一定能通过</p>
-<p>等价类集合的完备性：需要保证所有可能的边界值和边界条件都已经正确识别</p>
-<p>常用的测试方法：<br>等价类、边界值、错误推断</p>
-<p>其中错误推断存在以下优缺点：<br>优点：投入产出比高<br>缺点：高度依赖个人经验，难以系统化<br>比如，Web界面的GUI功能测试，需要考虑浏览器在有缓存和没有缓存下的表现；Web Service的API测试，需要考虑被测API所依赖的第三方API出错下的处理逻辑；对于代码级的单元测试，需要考虑被测函数的输入参数为空情况下的内部处理逻辑等等。由此可见，这些测试用例的设计都是基于曾经遇到的问题而进行的错误推测，很大程度上取决于个人能力。在企业中，为了降低对个人能力的依赖，会建立checklist，在完成测试点之后，会对照着checklist进行自查，完善补充测试点。在无效等价类中，可能新手会遗漏比较多，所以利用checklist完善好无效等价类的情况<br>所以一般的顺序：根据等价类和边界值得到第一版的测试点和用例，然后再依据对照checklist完善、补充遗漏的测试点</p>
-<p>5、软件测试过程当中，需求与测试用例的关系<br>注意以下几点：<br>如果在测试点的过程中遗漏了测试需求，则后面的测试用例也不会再提及<br>对于每个测试点，需要综合运用等价类、边界值、错误推测<br><img src="/images/pasted-15.png" alt="upload successful"></p>
-<p>6、测试用例的设计经验<br>第一：只有深入的了解软件的架构，才能有的放矢的设计出测试用例集，去发现系统边界以及系统集成上的缺陷<br>作为测试工程师，切记不能把整个被测系统作为一个大黑盒，必须要对内部的架构有清楚的理解，比如数据库连接方式、数据库的读写分离、消息中间件Kafka的配置、缓存系统的层级分布、第三方系统的集成等等。</p>
-<p>第二：必须深入理解被测软件的设计与实现细节，深入理解软件内部的处理逻辑。<br>单单只靠测试点设计出来的测试用例只是表面的一层，覆盖不到内部的处理流程、分支处理，而没有覆盖到地方就可能出现缺陷，在具体实践中，可以根据代码覆盖率的指标找到可能遗漏的测试点切记：不能以代码实现来设计测试点，始终以业务需求去设计测试用例</p>
-<p>第三：需要引入需求覆盖率和代码覆盖率来衡量测试执行的完备性，并以此为依据来找出遗漏的测试点。</p>
-<p>总结<br>1、测试用例的重要性以及书写测试用例中常见的组成要素，书写测试用例时，要保证子测试点的唯一性；前置条件、操作步骤的可读性和可操作性，每个操作步骤产生对应的预期结果；每一条用例具有唯一、不重复的特性<br>2、综合运用等价类、边界值、错误推断减少测试点的遗漏，覆盖测试需求<br>3、了解需求与测试用例之间的关系，在测试点的环节中减少遗漏<br>4、黑盒测试仅仅是测试的表面一层，需要深入系统的代码层面，了解软件的架构与实现细节，深入了解软件的内部处理逻辑才能有的放矢的设计出好的测试用例集</p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">测试需求</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">设计用例的方法</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">书写规范</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2020/10/06/My-first-blog/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    
+                    </div>
+                </span>
             </div>
         </div>
         
-        
     </div>
 </aside>
 
 
 
+  
+  
+  
 
   
+
+  
+
   
 
 
@@ -358,8 +282,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: false,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
